@@ -9,16 +9,20 @@
   </div>
 </template>
 
-<script>
+<script lang="ts">
 {{#unless router}}
+import { Vue, Component } from './ext-nb'
 import HelloWorld from './components/HelloWorld'
 
 {{/unless}}
-export default {
+
+@Component({
   name: 'app'{{#router}}{{else}},
   components: {
     HelloWorld
   }{{/router}}
+})
+export default class App extends Vue {
 }
 </script>
 
