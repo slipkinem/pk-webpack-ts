@@ -20,14 +20,14 @@
   </div>
 </template>
 
-<script>
-export default {
-  name: 'HelloWorld',
-  data () {
-    return {
-      msg: 'Welcome to Your Vue.js App'
-    }
-  }
+<script lang="ts">
+import { Vue, Component } from '../ext-nb'
+
+@Component({
+  name: 'HelloWorld'
+})
+export default class HelloWorld extends Vue {
+  msg: string = 'Welcome to Your Vue.js App'
 }
 </script>
 
