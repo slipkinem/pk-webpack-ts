@@ -58,7 +58,7 @@ module.exports = {
       },
       {
         test: /\.tsx?$/,
-          loader: 'ts-loader',
+        loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
           appendTsSuffixTo: [/\.vue$/],
@@ -66,7 +66,7 @@ module.exports = {
       },
       {
         test: /\.tsx?$/,
-          loader: 'tslint-loader',
+        loader: 'tslint-loader',
         exclude: /node_modules/,
         enforce: 'pre'
       },
