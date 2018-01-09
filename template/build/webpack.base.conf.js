@@ -33,7 +33,7 @@ module.exports = {
       : config.dev.assetsPublicPath
   },
   resolve: {
-    extensions: ['.ts', '.ts', '.js', '.vue', '.json'],
+    extensions: ['.ts', '.tsx', '.js', '.vue', '.json'],
     alias: {
       {{#if_eq build "standalone"}}
       'vue$': 'vue/dist/vue.esm.js',
@@ -61,8 +61,8 @@ module.exports = {
           loader: 'ts-loader',
         exclude: /node_modules/,
         options: {
-        appendTsSuffixTo: [/\.vue$/],
-      }
+          appendTsSuffixTo: [/\.vue$/],
+        }
       },
       {
         test: /\.tsx?$/,
