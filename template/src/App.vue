@@ -10,8 +10,8 @@
 </template>
 
 <script lang="ts">
-{{#unless router}}
 import { Vue, Component } from './ext-nb'
+{{#unless router}}
 import HelloWorld from './components/HelloWorld'
 
 {{/unless}}
